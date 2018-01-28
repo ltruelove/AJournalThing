@@ -8,10 +8,12 @@ import (
 	"github.com/ltruelove/AJournalThing/database"
 	"github.com/ltruelove/AJournalThing/post"
 	_ "github.com/mattn/go-sqlite3"
+	"log"
 	"os"
+	"time"
 	//"html/template"
 	//"io/ioutil"
-	//"net/http"
+	"net/http"
 	//"strings"
 )
 
@@ -45,5 +47,14 @@ func main() {
 	defer database.DBCon.Close()
 
 	r := mux.NewRouter()
-	RegisterPostRoutes(r)
+	post.RegisterPostRoutes(r)
+
+	srv := &http.Server{
+		Handler:      r,
+		Addr:         "127.0.0.1:8000",
+		WriteTimeout: 15 * time.Second,
+		ReadTimeout:  15 * time.Second,
+	}
+
+	log.Fatal(srv.ListenAndServe())
 }
