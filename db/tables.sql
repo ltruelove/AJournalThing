@@ -1,19 +1,18 @@
 CREATE TABLE post (
-    Id        INT           PRIMARY KEY
+    Id        INTEGER       PRIMARY KEY
                             UNIQUE
                             NOT NULL,
     Title     VARCHAR (250) NOT NULL,
     Content   VARCHAR,
-    IsPrivate BOOLEAN       DEFAULT true
+    IsPrivate INTEGER       DEFAULT (1) 
                             NOT NULL,
-    IsLive    BOOLEAN       DEFAULT false
+    IsLive    INTEGER       DEFAULT (0) 
                             NOT NULL
 );
 
 CREATE TABLE postImage (
-    FkPost  INT            REFERENCES post (Id) 
+    FkPost  INTEGER        REFERENCES post (Id) 
                            NOT NULL,
     Name    VARCHAR (300)  NOT NULL,
     Comment VARCHAR (1000) 
 );
-
