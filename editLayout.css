@@ -1,7 +1,7 @@
 .site {
     background-color: #DDD;
-    height: 600px;
     width: 100%;
+    padding: 20px;
 }
 
 .postTitleInput {
@@ -16,4 +16,8 @@
 }
 
 .contentEditDiv {
+}
+
+.dragover {
+    border-color: #bc381a;
 }
