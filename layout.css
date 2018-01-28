@@ -1,0 +1,92 @@
+.site {
+    background-color: #DDD;
+    height: 600px;
+    width: 100%;
+}
+
+.info {
+    background-color: #FFF;
+    height: 600px;
+    padding: 20px;
+}
+
+.infoContent {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #bc381a;
+    height: 400px;
+    color: #FFF;
+}
+
+.content {
+    background-color: #FFF;
+    height: 600px;
+    padding: 20px;
+}
+
+.content > .post {
+    border: 1px solid #A7A7A7;
+}
+
+.content > .post ~ .post {
+    border-top: none;
+    border-left: 1px solid #A7A7A7;
+    border-right: 1px solid #A7A7A7;
+    border-bottom: 1px solid #A7A7A7;
+}
+
+.post {
+    width: 100%;
+    padding: 15px;
+}
+
+.postTitle {
+    width: 100%;
+    font-family: Arial;
+    font-size: 16px;
+    color: #BC381A;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.postTitle .postTime{
+    float: right;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.postContent {
+    font-family: Arial;
+    font-size: 12px;
+    color: #000;
+}
+
+.myMedia {
+    background-color: #FFF;
+    height: 600px;
+    padding: 20px;
+}
+
+.pictureContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #bc381a;
+    height: 400px;
+    width: 100%;
+}
+
+.pictureHeader {
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.moreLink a {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #BC381A;
+}

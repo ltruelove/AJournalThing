@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="editLayout.css">
+        <link rel='stylesheet' href='static/css/textAngular.css'>
+
+        <script src="https://use.fontawesome.com/51102ce233.js"></script>
+        <script src="angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src='static/js/textAngular-rangy.min.js'></script>
+        <script src='static/js/textAngular-sanitize.min.js'></script>
+        <script src='static/js/textAngular.min.js'></script>
+
+    </head>
+
+    <body>
+    <div ng-app="editPost" ng-controller="postController" class="container site">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="fieldLabel">Post Title</div>
+            <input type="text" class="postTitleInput" />
+            <br />
+            <br />
+            <div class="fieldLabel">Post Content</div>
+            <text-angular ng-model="postContent" name="htmlcontent"></text-angular>
+            <br />
+            <br />
+            <div class="fieldLabel">Add an image</div>
+            <div class="imageDrop">Drop image(s) here</div>
+            <br />
+            <br />
+            <input type="button" value="Save" />
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+        <script src="editPost.js"></script>
+    </body>
+</html
