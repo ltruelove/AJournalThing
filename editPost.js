@@ -4,6 +4,8 @@ app.controller("postController", function($scope, textAngularManager, Upload) {
     $scope.postTitle = "Test Title";
     $scope.postContent = "<h1>Test</h1>";
     $scope.postFiles = [];
+    $scope.isPrivate = true;
+    $scope.isLive = false;
 
     $scope.uploadFiles = function(files){
         for(var i = 0; i < files.length; i++){

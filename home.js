@@ -1,5 +1,6 @@
 var app = angular.module("home", ['ngSanitize']); 
 app.controller("homeController", function($scope) {
+    $scope.pageTitle = 'Journal Home';
     $scope.info = {
         description: "I've been wanting to remember a lot of the times we have with the kids and it seems that it may be easier to do it in an online journal. So here you go"
     };
